@@ -1,0 +1,30 @@
+{
+  "name": "jx-language-support",
+  "displayName": "JX Language Support",
+  "description": "Realce de sintaxe para a linguagem JX v0.1 criada por João",
+  "version": "0.1.0",
+  "publisher": "JoaoManoel",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "jx",
+        "aliases": ["JX", "jx"],
+        "extensions": [".jx"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jx",
+        "scopeName": "source.jx",
+        "path": "./syntaxes/jx.tmLanguage.json"
+      }
+    ]
+  }
+}
